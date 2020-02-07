@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fangte-common" />
+        <module name="fangte-auth" />
+        <module name="fangte-monitor" />
+        <module name="fangte-eureka" />
+        <module name="fangte-gateway" />
+        <module name="fangte-admin-api" />
+        <module name="fangte-config" />
+        <module name="fangte-admin-biz" />
+        <module name="fangte-zipkin" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fangte-admin" options="-parameters" />
+      <module name="fangte-admin-api" options="-parameters" />
+      <module name="fangte-admin-biz" options="-parameters" />
+      <module name="fangte-auth" options="-parameters" />
+      <module name="fangte-common" options="-parameters" />
+      <module name="fangte-config" options="-parameters" />
+      <module name="fangte-eureka" options="-parameters" />
+      <module name="fangte-gateway" options="-parameters" />
+      <module name="fangte-monitor" options="-parameters" />
+      <module name="fangte-zipkin" options="-parameters" />
+    </option>
+  </component>
+</project>

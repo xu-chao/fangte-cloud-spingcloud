@@ -1,0 +1,53 @@
+server:
+  port: 4100
+
+spring:
+  application:
+    name: fangte-admin-biz
+
+  profiles:
+    active: dev
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: secret
+      access-token-uri: http://fangte-auth:4000/oauth/token
+      user-authorization-uri: http://fangte-auth:4000/oauth/authorize
+    resource:
+      token-info-uri: http://fangte-auth:4000/oauth/check_token
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://fangte-eureka:8761/eureka/
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.fangte.admin.api.entity
+
+#mybaatis分页插件pagehelper设置
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+# 打印sql
+logging:
+  level:
+    com.fangte.admin.biz.mapper: DEBUG

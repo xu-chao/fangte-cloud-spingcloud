@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-admin/fangte-admin-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-admin/fangte-admin-biz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fangte-zipkin" charset="UTF-8" />
+  </component>
+</project>

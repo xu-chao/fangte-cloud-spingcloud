@@ -1,0 +1,18 @@
+zuul:
+  routes:
+    fangte-auth:
+      path: /api/auth/**
+      serviceId: fangte-auth
+    fangte-admin:
+      path: /api/admin/**
+      serviceId: fangte-admin-biz
+#    sct-monitor:
+#      path: /api/monitor/**
+#      serviceId: sct-monitor
+#    sct-zipkin:
+#      path: /api/zipkin/**
+#      serviceId: sct-zipkin
+#    sct-eureka:
+#      path: /api/eureka/**
+#      serviceId: sct-eureka
+

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.fangte.admin.api.feign.fallback.RemoteUserServiceFallbackImpl

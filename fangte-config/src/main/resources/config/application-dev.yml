@@ -1,0 +1,17 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  zipkin:
+    base-url: http://fangte-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:3000
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
